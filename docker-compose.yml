@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  myfirstwebapi:
+    image: ${DOCKER_REGISTRY-}myfirstwebapi
+    build:
+      context: .
+      dockerfile: MyFirstWebApi/Dockerfile
